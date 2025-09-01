@@ -328,7 +328,7 @@ const AppSettingsPage = () => {
                                 </label>
                                 <InputText
                                     id="app_name_en"
-                                    value={settings.app_name_i18n.en}
+                                    value={settings?.app_name_i18n?.en}
                                     onChange={(e) => setSettings({
                                         ...settings,
                                         app_name_i18n: { ...settings.app_name_i18n, en: e.target.value }
@@ -372,7 +372,7 @@ const AppSettingsPage = () => {
                                 </label>
                                 <InputText
                                     id="app_slogan_en"
-                                    value={settings.app_slogan_i18n.en}
+                                    value={settings?.app_slogan_i18n?.en}
                                     onChange={(e) => setSettings({
                                         ...settings,
                                         app_slogan_i18n: { ...settings.app_slogan_i18n, en: e.target.value }
